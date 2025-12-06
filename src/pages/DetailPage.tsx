@@ -33,8 +33,13 @@ const DetailPage = () => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight' && index >= 7 && index <= pageNum[name]-1) {
-        
         setIndex(prev => prev + 1);
+        return
+      }
+      console.log(e.key)
+      if(e.key === "ArrowLeft" && index >= 8 && index <= pageNum[name]-1){
+        setIndex(prev => prev - 1);
+        return
       }
     };
 

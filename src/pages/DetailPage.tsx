@@ -14,11 +14,13 @@ import soo18 from '../assets/soo18.png';
 import soo19 from '../assets/soo19.png';
 import soo20 from '../assets/soo20.png';
 import soo21 from '../assets/soo21.png';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import ProgressBar from "../components/ProgressBar";
 
 const DetailPage = () => {
   const [index, setIndex] = useState(0);
   const navigation = useNavigate();
+  const {name} = useParams();
   const textMap = {
     'soo': ["예상치 못한 선물은 10배는 더 기쁘다!\n정말 정말 행운이니까!", "여덟번째 글자", " -> 키를 눌러 글자를 완성해보세요!", "수의 글자는 처음부터\n빵!터지는 컨페티 같이 만들고 싶었답니다!", "두 글자를 선택해\n다양하게 그려보고,",
       "글자의 뼈대가 될 조형을\n선택해,", "전체 글자를 파생시키면\n스케치 완성!", "전체 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 두께를 맞춰주고,", "전체 배치 및 디테일 수정하고.", "깜찍한 느낌표까지\n찍어주면!",
@@ -31,7 +33,7 @@ const DetailPage = () => {
 
   // 해결 2: 이미지 프리로딩 (배경 깜빡임 방지)
   useEffect(() => {
-    const images = imgMap['soo'];
+    const images = imgMap[name];
     images.forEach((src) => {
       const img = new Image();
       img.src = src;
@@ -45,7 +47,7 @@ const DetailPage = () => {
 
     const timer = setInterval(() => {
       setIndex(prevIndex => prevIndex + 1);
-    }, 2000);
+    }, 1500);
 
     return () => clearInterval(timer);
   }, [index]); // 의존성 배열에 index 추가
@@ -71,10 +73,10 @@ const DetailPage = () => {
   }, [index])
   
   // 배경색과 배경이미지를 분리해서 관리
-  const currentBgColor = index <= 2 ? color['soo'] : 'black';
+  const currentBgColor = index <= 2 ? color[name] : 'black';
   
   // 오타 수정: 마지막 fallback 값을 index(숫자)가 아닌 null로 변경
-  const currentBgImg = index === 4 ? imgMap['soo'][0] : index === 5 ? imgMap['soo'][1] : index >= 7 ? imgMap['soo'][index-5] : null;
+  const currentBgImg = index === 4 ? imgMap[name][0] : index === 5 ? imgMap[name][1] : index >= 7 ? imgMap[name][index-5] : null;
 
   return (
     // 문제 1 해결: bgColor와 bgImg prop을 분리하여 전달
@@ -83,7 +85,7 @@ const DetailPage = () => {
       {index === 0 || index === 2 || index === 6 ? null :
       <TextArea>
         <Text color={index === 1 ? 'black' : 'white'}>
-          {textMap['soo'][index === 1 ? 0 : (index === 3 || index === 4 || index === 5) ? 1 : index >= 7 ? index-5 : textMap['soo'].length-1]}
+          {textMap[name][index === 1 ? 0 : (index === 3 || index === 4 || index === 5) ? 1 : index >= 7 ? index-5 : textMap[name].length-1]}
         </Text>
       </TextArea>}
       {index === 17 ? 
@@ -92,6 +94,7 @@ const DetailPage = () => {
           홈으로 !
         </HomeButton>
       :null}
+      {index >= 7 ? <ProgressBar totalSteps={11} currentStep={index-7} color={color[name]}/> : null}
     </Container>
   )
 }
@@ -139,7 +142,8 @@ const HomeButton = styled.div({
   fontSize:12,
   fontWeight:600,
   color:"#fff",
-  cursor:'pointer'
+  cursor:'pointer',
+  zIndex:99
 })
 
 const CloverImg = styled.img({

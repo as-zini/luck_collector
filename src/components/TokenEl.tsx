@@ -2,7 +2,13 @@ import styled from "@emotion/styled"
 import soo from '../assets/soo_token.png';
 import { useNavigate } from "react-router-dom";
 
-const TokenEl = ({img, isActive}:{img: string, isActive: boolean,}) => {
+interface TokenElProps{
+  img: string;
+  isActive: boolean;
+  setCurrentCenter: React.Dispatch<React.SetStateAction<string>>
+}
+
+const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
   const imgMap = {
     soo: soo
   }
@@ -14,9 +20,17 @@ const TokenEl = ({img, isActive}:{img: string, isActive: boolean,}) => {
     navigation(`/detail/${img}`)
   }
 
+  const handleMouseEnter = () => {
+    setCurrentCenter(img)
+  }
+
+  const handleMouseLeave = () => {
+    setCurrentCenter("")
+  }
+
   
   return (
-    <TokenBody src={imgMap[img]} isActive={isActive} onClick={handleClick} ></TokenBody>
+    <TokenBody src={imgMap[img]} isActive={isActive} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}></TokenBody>
   )
 }
 

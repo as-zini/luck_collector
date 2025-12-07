@@ -36,7 +36,6 @@ const InfiniteSlider = ({setCurrentCenter}:{setCurrentCenter:React.Dispatch<Reac
     if (isSliding.current) return;
     isSliding.current = true;
     setTransitionEnabled(true);
-    setCurrentCenter(images[currentIndex + 1])
     setCurrentIndex((prev) => prev + 1);
   };
 
@@ -44,7 +43,6 @@ const InfiniteSlider = ({setCurrentCenter}:{setCurrentCenter:React.Dispatch<Reac
     if (isSliding.current) return;
     isSliding.current = true;
     setTransitionEnabled(true);
-    setCurrentCenter(images[currentIndex -1])
     setCurrentIndex((prev) => prev - 1);
   };
 
@@ -54,11 +52,9 @@ const InfiniteSlider = ({setCurrentCenter}:{setCurrentCenter:React.Dispatch<Reac
     if (currentIndex >= images.length + CLONE_COUNT) {
       setTransitionEnabled(false);
       setCurrentIndex(CLONE_COUNT);
-      setCurrentCenter(images[CLONE_COUNT])
     } else if (currentIndex < CLONE_COUNT) {
       setTransitionEnabled(false);
       setCurrentIndex(images.length + CLONE_COUNT - 1);
-      setCurrentCenter(images[images.length + CLONE_COUNT - 1])
     }
   };
 
@@ -79,7 +75,7 @@ const InfiniteSlider = ({setCurrentCenter}:{setCurrentCenter:React.Dispatch<Reac
               console.log(idx, currentIndex, isCenter);
               return (
                 <SlideItem key={idx}>
-                  <TokenEl img={src} isActive={isCenter}/>
+                  <TokenEl img={src} isActive={isCenter} setCurrentCenter={setCurrentCenter}/>
                   {idx}
                 </SlideItem>
               );

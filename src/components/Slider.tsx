@@ -11,7 +11,7 @@ const SHOW_COUNT = 5;
 const CLONE_COUNT = 3; 
 const ITEM_WIDTH_PERCENT = 100 / SHOW_COUNT; // 20%
 
-const InfiniteSlider = () => {
+const InfiniteSlider = ({setCurrentCenter}:{setCurrentCenter:React.Dispatch<React.SetStateAction<string>>}) => {
   // 앞뒤로 복사본 생성
   const extendedImages = [
     ...images.slice(-CLONE_COUNT),
@@ -36,6 +36,7 @@ const InfiniteSlider = () => {
     if (isSliding.current) return;
     isSliding.current = true;
     setTransitionEnabled(true);
+    setCurrentCenter(images[currentIndex + 1])
     setCurrentIndex((prev) => prev + 1);
   };
 
@@ -43,6 +44,7 @@ const InfiniteSlider = () => {
     if (isSliding.current) return;
     isSliding.current = true;
     setTransitionEnabled(true);
+    setCurrentCenter(images[currentIndex -1])
     setCurrentIndex((prev) => prev - 1);
   };
 
@@ -52,9 +54,11 @@ const InfiniteSlider = () => {
     if (currentIndex >= images.length + CLONE_COUNT) {
       setTransitionEnabled(false);
       setCurrentIndex(CLONE_COUNT);
+      setCurrentCenter(images[CLONE_COUNT])
     } else if (currentIndex < CLONE_COUNT) {
       setTransitionEnabled(false);
       setCurrentIndex(images.length + CLONE_COUNT - 1);
+      setCurrentCenter(images[images.length + CLONE_COUNT - 1])
     }
   };
 

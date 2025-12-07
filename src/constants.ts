@@ -29,3 +29,8 @@ export const textMap = {
 export const imgMap = {
   'soo': [soo7, soo8, soo11, soo12, soo13, soo14, soo15, soo16, soo17, soo18, soo19, soo20, soo21]
 }
+
+export const mainText = {
+  'soo' : "",
+  
+}

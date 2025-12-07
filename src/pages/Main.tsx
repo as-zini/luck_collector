@@ -16,7 +16,7 @@ const Main = () => {
   return (
     <Container>
       <Text>{!currentCenter ? defaultText : mainText[currentCenter]}</Text>
-        <TokenSlider setCurrentCenter={setCurrentCenter}/>
+        <TokenSlider setCurrentCenter={setCurrentCenter}/>      
     </Container>
   );
 };

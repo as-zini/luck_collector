@@ -76,7 +76,6 @@ const InfiniteSlider = ({setCurrentCenter}:{setCurrentCenter:React.Dispatch<Reac
               return (
                 <SlideItem key={idx}>
                   <TokenEl img={src} isActive={isCenter} setCurrentCenter={setCurrentCenter}/>
-                  {idx}
                 </SlideItem>
               );
             })}

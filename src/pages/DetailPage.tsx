@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { color, imgMap, pageNum, textMap } from "../constants";
 import { useNavigate, useParams } from "react-router-dom";
 import ProgressBar from "../components/ProgressBar";
+import CloverIcon from "../components/CloverIcon";
 
 const DetailPage = () => {
   const [index, setIndex] = useState(0);
@@ -18,7 +19,6 @@ const DetailPage = () => {
     });
   }, []);
 
-  // 문제 2 해결: index가 변할 때마다 useEffect를 다시 실행하여 최신 index 값을 확인
   useEffect(() => {
     // index가 18 이상이면 타이머를 시작하지 않음 (종료)
     if (index >= 7) return;
@@ -61,15 +61,26 @@ const DetailPage = () => {
   // 오타 수정: 마지막 fallback 값을 index(숫자)가 아닌 null로 변경
   const currentBgImg = !name ? null : index === 4 ? imgMap[name][0] : index === 5 ? imgMap[name][1] : index >= 7 ? imgMap[name][index-5] : null;
 
+  const firstTextArr = !name ? null : textMap[name][0].split('\n')
+
   return (
     // 문제 1 해결: bgColor와 bgImg prop을 분리하여 전달
     <Container bgColor={currentBgColor} bgImg={currentBgImg}>
       {/* 해결 1: index >= 7 조건 추가 (7번 이후에도 텍스트 보이도록) */}
       {index === 0 || index === 2 || index === 6 ? null :
       <TextArea>
-        <Text color={index === 1 ? 'black' : 'white'}>
+        {index === 1 && firstTextArr ? 
+          <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
+            <Text color="black">{firstTextArr[0]}</Text>
+            <CloverText>
+              <Text color="black">{firstTextArr[1]}</Text>
+              <CloverIcon size={14}/>
+            </CloverText>
+          </div>
+        :<Text color={index === 1 ? 'black' : 'white'}>
           {!name ? "" : textMap[name][index === 1 ? 0 : (index === 3 || index === 4 || index === 5) ? 1 : index >= 7 ? index-5 : textMap[name].length-1]}
         </Text>
+        }
       </TextArea>}
       {name && index === pageNum[name] ? 
         <HomeButton onClick={() => navigation('/')}>
@@ -127,6 +138,12 @@ const HomeButton = styled.div({
   color:"#fff",
   cursor:'pointer',
   zIndex:99
+})
+
+const CloverText = styled.div({
+  display:'flex',
+  alignItems:'center',
+  gap:3
 })
 
 const CloverImg = styled.img({

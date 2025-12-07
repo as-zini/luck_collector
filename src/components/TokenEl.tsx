@@ -59,10 +59,12 @@ const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
   }
 
   const handleMouseEnter = () => {
+    if(!isActive) return
     setCurrentCenter(img)
   }
 
   const handleMouseLeave = () => {
+    if(!isActive) return
     setCurrentCenter("")
   }
 

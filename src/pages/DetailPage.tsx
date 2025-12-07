@@ -7,7 +7,7 @@ import CloverIcon from "../components/CloverIcon";
 import BouncingBall from "../components/BouncingClover";
 
 const DetailPage = () => {
-  const [index, setIndex] = useState(10);
+  const [index, setIndex] = useState(0);
   const navigation = useNavigate();
   const {name} = useParams();
 

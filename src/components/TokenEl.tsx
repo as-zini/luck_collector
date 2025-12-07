@@ -1,5 +1,24 @@
 import styled from "@emotion/styled"
 import soo from '../assets/soo_token.png';
+import sae from '../assets/sae_token.png';
+import yeon from '../assets/yeon_token.png';
+import sang from '../assets/sang_token.png';
+import eun from '../assets/eun_token.png';
+import ga from '../assets/ga_token.png';
+import yea from '../assets/yea_token.png';
+import tae from '../assets/tae_token.png';
+import na from '../assets/na_token.png';
+import seon from '../assets/seon_token.png';
+import hoon from '../assets/hoon_token.png';
+import hyeon from '../assets/hyeon_token.png';
+import seung from '../assets/seung_token.png';
+import rim from '../assets/rim_token.png';
+import lee from '../assets/lee_token.png';
+import hak from '../assets/hak_token.png';
+import gee from '../assets/gee_token.png';
+import wook from '../assets/wook_token.png';
+import jin from '../assets/jin_token.png';
+import yoon from '../assets/yoon_token.png';
 import { useNavigate } from "react-router-dom";
 
 interface TokenElProps{
@@ -10,7 +29,26 @@ interface TokenElProps{
 
 const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
   const imgMap: Record<string, string> = {
-    soo: soo
+    soo: soo,
+    sae: sae,
+    yeon: yeon,
+    sang: sang,
+    eun: eun,
+    ga: ga,
+    yea: yea,
+    tae: tae,
+    na: na,
+    seon: seon,
+    hoon: hoon,
+    hyeon: hyeon,
+    seung: seung,
+    rim: rim,
+    lee: lee,
+    hak: hak,
+    gee: gee,
+    wook: wook,
+    jin: jin,
+    yoon: yoon,
   }
 
   const navigation = useNavigate();
@@ -37,7 +75,7 @@ const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
 export default TokenEl
 
 const TokenBody = styled.img<{isActive:boolean}>(({isActive}) => ({
-  width:"14vw",
+  width:"15vw",
   height:"70vh",
   cursor:isActive ? 'pointer' : 'default',
   zIndex:999,

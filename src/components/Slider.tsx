@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import TokenEl from './TokenEl';
 
 const images: string[] = [
-  "soo","soo","soo","soo","soo","soo","soo","soo","soo","soo",
+  "yoon", "sae", "yeon", "sang", "soo", "eun", "ga", "yea", "tae", "na", "seon", "hoon", "hyeon", "seung", "rim", "lee", "hak", "gee", "wook", "jin",
 ];
 
 // 설정값
@@ -125,7 +125,6 @@ const SlideItem = styled.div`
   flex: 0 0 20%; 
   width: 20%;
   margin: 50px 0;
-  padding: 0 10px; /* 요소 간 간격 */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

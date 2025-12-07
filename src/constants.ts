@@ -55,16 +55,48 @@ import seon17 from './assets/seon17.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
-  'yeon': "#fff",
-  'sae': "#fff",
-  'seon': "#fff",
+  'yeon': "#a6caff",
+  'sae': "#e80b73",
+  'seon': "#f59800",
+  'yoon': "#ffd6d0",
+  'sang': '#44bbce',
+  'eun': '#c3cc00',
+  'ga':'#004798',
+  'yea':'#004798',
+  'tae':'#9dff9b',
+  'na':'#ffe383',
+  'hoon':'#00a7ff',
+  'hyeon':'#c4b4e6',
+  'seung':'#aa6035',
+  "rim":'#9defe1',
+  'lee':'#907ab8',
+  'hak':'#b3e1f5',
+  'gee':'#ffffff',
+  'wook':'#d25455',
+  'jin':'#004d1b'
 }
 
 export const pageNum: Record<string, number> = {
   'soo':17,
   'yeon': 16,
   'sae':16,
-  'seon': 21
+  'seon': 21,
+  'yoon': 0,
+  'sang': 0,
+  'eun': 0,
+  'ga':0,
+  'yea':0,
+  'tae':0,
+  'na':0,
+  'hoon':0,
+  'hyeon':0,
+  'seung':0,
+  "rim":0,
+  'lee':0,
+  'hak':0,
+  'gee':0,
+  'wook':0,
+  'jin':0
 }
 
 export const textMap: Record<string, string[]> = {
@@ -81,13 +113,45 @@ export const textMap: Record<string, string[]> = {
   'seon': ["언제나 돌아갈 곳이 되어준 엄마, 아빠\n감사하고 사랑합니다!", "열여섯 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "선과 호의 키워드는 ...", "어떤 글자를 만들어볼까 ...", "그게 있었지 !!\n제일 먼저 떠올랐던 엄마의 쪽지 !",
     "엄마 글씨체를 닮은 손글씨가 좋겠다!\n다양하게 써보자", "이거 괜찮은데?", "작은 ‘o’의 형태나,", "흘리듯 쓴 ‘ﾩ’의 형태 같은\n엄마의 글씨체를 좀 더 강조해주면 ...",
     "전체 스케치 완성!", "벡터화 해주고,", "획 수정하고,", "전체적인 배치 수정,", "디테일 수정 후에,", "화룡점정!\n엄마의 햇님도 넣어주면!", "", ""
-  ]
+  ],
+  'yoon': [],
+  'sang': [],
+  'eun': [],
+  'ga':[],
+  'yea':[],
+  'tae':[],
+  'na':[],
+  'hoon':[],
+  'hyeon':[],
+  'seung':[],
+  "rim":[],
+  'lee':[],
+  'hak':[],
+  'gee':[],
+  'wook':[],
+  'jin':[]
 }
 export const imgMap: Record<string, string[]> = {
   'soo': [soo7, soo8, soo11, soo12, soo13, soo14, soo15, soo16, soo17, soo18, soo19, soo20, soo21],
   'yeon': [yeon1, yeon2, yeon3, yeon4, yeon5, yeon6, yeon7, yeon8, yeon9, yeon10, yeon11, yeon12],
   'sae': [sae1, sae2, sae3, sae4, sae5, sae6, sae7, sae8, sae9, sae10, sae11, sae12],
-  'seon': [seon1, seon2, seon3, seon4, seon5, seon6, seon7, seon8, seon9, seon10, seon11, seon12, seon13, seon14, seon15, seon16, seon17]
+  'seon': [seon1, seon2, seon3, seon4, seon5, seon6, seon7, seon8, seon9, seon10, seon11, seon12, seon13, seon14, seon15, seon16, seon17],
+  'yoon': [],
+  'sang': [],
+  'eun': [],
+  'ga':[],
+  'yea':[],
+  'tae':[],
+  'na':[],
+  'hoon':[],
+  'hyeon':[],
+  'seung':[],
+  "rim":[],
+  'lee':[],
+  'hak':[],
+  'gee':[],
+  'wook':[],
+  'jin':[]
 }
 
 export const mainText: Record<string, string> = {
@@ -95,4 +159,20 @@ export const mainText: Record<string, string> = {
   'yeon': "",
   'sae': "",
   'seon': "",
+  'yoon': "#ffd6d0",
+  'sang': '#44bbce',
+  'eun': '#c3cc00',
+  'ga':'#004798',
+  'yea':'#004798',
+  'tae':'#9dff9b',
+  'na':'#ffe383',
+  'hoon':'#00a7ff',
+  'hyeon':'#c4b4e6',
+  'seung':'#aa6035',
+  "rim":'#9defe1',
+  'lee':'#907ab8',
+  'hak':'#b3e1f5',
+  'gee':'#ffffff',
+  'wook':'#d25455',
+  'jin':'#004d1b'
 }

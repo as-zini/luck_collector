@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from '@emotion/styled';
 import { color, imgMap, pageNum, textMap } from "../constants";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ProgressBar from "../components/ProgressBar";
 import CloverIcon from "../components/CloverIcon";
 import BouncingBall from "../components/BouncingClover";
@@ -9,6 +9,9 @@ import BouncingBall from "../components/BouncingClover";
 const DetailPage = () => {
   const [index, setIndex] = useState(0);
   const navigation = useNavigate();
+  const location = useLocation();
+  const tokenIndex =
+    (location.state as { tokenIndex?: number } | null)?.tokenIndex ?? 0;
   const {name} = useParams();
 
   // 해결 2: 이미지 프리로딩 (배경 깜빡임 방지)
@@ -37,7 +40,6 @@ const DetailPage = () => {
         setIndex(prev => prev + 1);
         return
       }
-      console.log(e.key)
       if(e.key === "ArrowLeft" && name && index >= 8 && index <= pageNum[name]-1){
         setIndex(prev => prev - 1);
         return
@@ -51,10 +53,6 @@ const DetailPage = () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [index]);
-
-  useEffect(() => {
-    console.log(index);
-  }, [index])
   
   // 배경색과 배경이미지를 분리해서 관리
   const currentBgColor = index <= 2 && name ? color[name] : 'black';
@@ -84,7 +82,9 @@ const DetailPage = () => {
         }
       </TextArea>}
       {name && index === pageNum[name] ? 
-        <HomeButton onClick={() => navigation('/')}>
+        <HomeButton onClick={() => navigation('/', {
+          state: { tokenIndex },
+        })}>
           <BouncingBall/>
           홈으로 !
         </HomeButton>

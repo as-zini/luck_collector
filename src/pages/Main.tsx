@@ -1,16 +1,12 @@
 import styled from "@emotion/styled";
 import TokenSlider from "../components/Slider";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { mainText } from "../constants";
 
 
 const Main = () => {
   const defaultText = "글자가 만들어진 과정을 볼 수 있어요!\n궁금한 글자를 선택해보세요!";
   const [currentCenter, setCurrentCenter] = useState<string>("");
-
-  useEffect(() => {
-    console.log(currentCenter)
-  }, [currentCenter])
   
 
   return (

@@ -24,10 +24,11 @@ import { useNavigate } from "react-router-dom";
 interface TokenElProps{
   img: string;
   isActive: boolean;
-  setCurrentCenter: React.Dispatch<React.SetStateAction<string>>
+  setCurrentCenter: React.Dispatch<React.SetStateAction<string>>;
+  originalIndex: number;
 }
 
-const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
+const TokenEl = ({img, isActive, setCurrentCenter, originalIndex}:TokenElProps) => {
   const imgMap: Record<string, string> = {
     soo: soo,
     sae: sae,
@@ -55,7 +56,9 @@ const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
 
   const handleClick = () => {
     if(!isActive) return
-    navigation(`/detail/${img}`)
+    navigation(`/detail/${img}`, {
+      state: { tokenIndex: originalIndex },
+    });
   }
 
   const handleMouseEnter = () => {

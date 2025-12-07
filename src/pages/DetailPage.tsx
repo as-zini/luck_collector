@@ -4,9 +4,10 @@ import { color, imgMap, pageNum, textMap } from "../constants";
 import { useNavigate, useParams } from "react-router-dom";
 import ProgressBar from "../components/ProgressBar";
 import CloverIcon from "../components/CloverIcon";
+import BouncingBall from "../components/BouncingClover";
 
 const DetailPage = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(10);
   const navigation = useNavigate();
   const {name} = useParams();
 
@@ -84,7 +85,7 @@ const DetailPage = () => {
       </TextArea>}
       {name && index === pageNum[name] ? 
         <HomeButton onClick={() => navigation('/')}>
-          <CloverImg/>
+          <BouncingBall/>
           홈으로 !
         </HomeButton>
       :null}
@@ -144,8 +145,4 @@ const CloverText = styled.div({
   display:'flex',
   alignItems:'center',
   gap:3
-})
-
-const CloverImg = styled.img({
-
 })

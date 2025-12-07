@@ -53,21 +53,21 @@ import seon15 from './assets/seon15.png';
 import seon16 from './assets/seon16.png';
 import seon17 from './assets/seon17.png';
 
-export const color = {
+export const color: Record<string, string> = {
   'soo': "#EA504F",
   'yeon': "#fff",
   'sae': "#fff",
   'seon': "#fff",
 }
 
-export const pageNum = {
+export const pageNum: Record<string, number> = {
   'soo':17,
   'yeon': 16,
   'sae':16,
   'seon': 21
 }
 
-export const textMap = {
+export const textMap: Record<string, string[]> = {
   'soo': ["예상치 못한 선물은 10배는 더 기쁘다!\n정말 정말 행운이니까!", "여덟 번째 글자", " → 키를 눌러 글자를 완성해보세요!", "수의 글자는 처음부터\n빵!터지는 컨페티 같이 만들고 싶었답니다!", "두 글자를 선택해\n다양하게 그려보고,",
     "글자의 뼈대가 될 조형을\n선택해,", "전체 글자를 파생시키면\n스케치 완성!", "전체 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 두께를 맞춰주고,", "전체 배치 및 디테일 수정하고.", "깜찍한 느낌표까지\n찍어주면!",
     "", ""
@@ -83,14 +83,14 @@ export const textMap = {
     "전체 스케치 완성!", "벡터화 해주고,", "획 수정하고,", "전체적인 배치 수정,", "디테일 수정 후에,", "화룡점정!\n엄마의 햇님도 넣어주면!", "", ""
   ]
 }
-export const imgMap = {
+export const imgMap: Record<string, string[]> = {
   'soo': [soo7, soo8, soo11, soo12, soo13, soo14, soo15, soo16, soo17, soo18, soo19, soo20, soo21],
   'yeon': [yeon1, yeon2, yeon3, yeon4, yeon5, yeon6, yeon7, yeon8, yeon9, yeon10, yeon11, yeon12],
   'sae': [sae1, sae2, sae3, sae4, sae5, sae6, sae7, sae8, sae9, sae10, sae11, sae12],
   'seon': [seon1, seon2, seon3, seon4, seon5, seon6, seon7, seon8, seon9, seon10, seon11, seon12, seon13, seon14, seon15, seon16, seon17]
 }
 
-export const mainText = {
+export const mainText: Record<string, string> = {
   'soo' : "",
   'yeon': "",
   'sae': "",

@@ -9,7 +9,7 @@ interface TokenElProps{
 }
 
 const TokenEl = ({img, isActive, setCurrentCenter}:TokenElProps) => {
-  const imgMap = {
+  const imgMap: Record<string, string> = {
     soo: soo
   }
 

@@ -11,7 +11,7 @@ const DetailPage = () => {
 
   // 해결 2: 이미지 프리로딩 (배경 깜빡임 방지)
   useEffect(() => {
-    const images = imgMap[name];
+    const images = name ? imgMap[name] : [];
     images.forEach((src) => {
       const img = new Image();
       img.src = src;
@@ -32,12 +32,12 @@ const DetailPage = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight' && index >= 7 && index <= pageNum[name]-1) {
+      if (e.key === 'ArrowRight' && name && index >= 7 && index <= pageNum[name]-1) {
         setIndex(prev => prev + 1);
         return
       }
       console.log(e.key)
-      if(e.key === "ArrowLeft" && index >= 8 && index <= pageNum[name]-1){
+      if(e.key === "ArrowLeft" && name && index >= 8 && index <= pageNum[name]-1){
         setIndex(prev => prev - 1);
         return
       }
@@ -56,10 +56,10 @@ const DetailPage = () => {
   }, [index])
   
   // 배경색과 배경이미지를 분리해서 관리
-  const currentBgColor = index <= 2 ? color[name] : 'black';
+  const currentBgColor = index <= 2 && name ? color[name] : 'black';
   
   // 오타 수정: 마지막 fallback 값을 index(숫자)가 아닌 null로 변경
-  const currentBgImg = index === 4 ? imgMap[name][0] : index === 5 ? imgMap[name][1] : index >= 7 ? imgMap[name][index-5] : null;
+  const currentBgImg = !name ? null : index === 4 ? imgMap[name][0] : index === 5 ? imgMap[name][1] : index >= 7 ? imgMap[name][index-5] : null;
 
   return (
     // 문제 1 해결: bgColor와 bgImg prop을 분리하여 전달
@@ -68,16 +68,16 @@ const DetailPage = () => {
       {index === 0 || index === 2 || index === 6 ? null :
       <TextArea>
         <Text color={index === 1 ? 'black' : 'white'}>
-          {textMap[name][index === 1 ? 0 : (index === 3 || index === 4 || index === 5) ? 1 : index >= 7 ? index-5 : textMap[name].length-1]}
+          {!name ? "" : textMap[name][index === 1 ? 0 : (index === 3 || index === 4 || index === 5) ? 1 : index >= 7 ? index-5 : textMap[name].length-1]}
         </Text>
       </TextArea>}
-      {index === pageNum[name] ? 
+      {name && index === pageNum[name] ? 
         <HomeButton onClick={() => navigation('/')}>
           <CloverImg/>
           홈으로 !
         </HomeButton>
       :null}
-      {index >= 7 ? <ProgressBar totalSteps={pageNum[name]-6} currentStep={index-7} color={color[name]}/> : null}
+      {index >= 7 && name ? <ProgressBar totalSteps={pageNum[name]-6} currentStep={index-7} color={color[name]}/> : null}
     </Container>
   )
 }

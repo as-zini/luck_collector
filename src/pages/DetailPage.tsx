@@ -128,7 +128,7 @@ const Text = styled.span<{color: string}>(({color}) => ({
 const HomeButton = styled.div({
   position:'fixed',
   bottom:'4%',
-  right:'3%',
+  right:'1%',
   display:'flex',
   flexDirection:'column',
   justifyContent:'center',

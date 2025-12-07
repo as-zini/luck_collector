@@ -21,42 +21,45 @@ const ProgressBar = ({ totalSteps, currentStep, color }:ProgressBarProps) => {
 
   return (
     <Track>
-      <Fill width={percentage} color={color} />
-      <IconWrapper width={percentage}>
-        <CloverIcon size={16} color={color} />
-      </IconWrapper>
+      <Fill width={percentage} color={color}>
+        {percentage > 0 && (
+          <IconWrapper>
+            <CloverIcon size={16} color={color} />
+          </IconWrapper>
+        )}
+      </Fill>
     </Track>
   )
 }
 
 export default ProgressBar
 
+// 트랙
 const Track = styled.div({
   width: '100%',
   height: '10px',
   backgroundColor: '#000',
   borderRadius: '5px',
-  overflow: 'visible',   // 바깥으로 나와도 보이도록
+  overflow: 'visible',   // 아이콘이 바깥으로 나와도 보이도록
   position: 'fixed',
   bottom: 0,
 });
 
-// 채워지는 부분 + 아이콘 컨테이너
-const Fill = styled.div<{width: number, color: string}>(({ width, color }) => ({
+// 채워지는 부분
+const Fill = styled.div<{width: number; color: string}>(({ width, color }) => ({
+  position: 'relative',               // 아이콘 absolute 기준
   height: '100%',
   width: `${width}%`,
   backgroundColor: color,
   transition: 'width 0.3s ease-in-out',
-  display: 'flex',                // 오른쪽 정렬 위해 flex
-  justifyContent: 'flex-end',     // 오른쪽 끝으로
-  alignItems: 'center',
-  boxSizing: 'border-box',
-  paddingRight: '4px',            // 아이콘이 너무 끝에 딱 붙지 않게
+
 }));
 
-const IconWrapper = styled.div<{ width: number }>(({ width }) => ({
+// 막대 오른쪽 끝에 살짝 튀어나오게
+const IconWrapper = styled.div({
   position: 'absolute',
-  left: `${width}%`,         // 진행률에 따라 이동
-  bottom: '10px',            // 막대 위로 살짝 띄우기
-  transform: 'translateX(-50%)',
-}));
+  right: '-8px',          // 막대 오른쪽 밖으로 살짝
+  top: '-25px',           // 막대 위로 빼기 (막대 높이가 10px이라 이 정도가 자연스러움)
+  display: 'flex',
+  alignItems: 'center',
+});

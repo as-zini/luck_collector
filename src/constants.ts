@@ -52,6 +52,21 @@ import seon14 from './assets/seon14.png';
 import seon15 from './assets/seon15.png';
 import seon16 from './assets/seon16.png';
 import seon17 from './assets/seon17.png';
+import gee1 from './assets/gee1.png';
+import gee2 from './assets/gee2.png';
+import gee3 from './assets/gee3.png';
+import gee4 from './assets/gee4.png';
+import gee5 from './assets/gee5.png';
+import gee6 from './assets/gee6.png';
+import gee7 from './assets/gee7.png';
+import gee8 from './assets/gee8.png';
+import gee9 from './assets/gee9.png';
+import gee10 from './assets/gee10.png';
+import gee11 from './assets/gee11.png';
+import gee12 from './assets/gee12.png';
+import gee13 from './assets/gee13.png';
+import gee14 from './assets/gee14.png';
+import gee15 from './assets/gee15.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -94,7 +109,7 @@ export const pageNum: Record<string, number> = {
   "rim":0,
   'lee':0,
   'hak':0,
-  'gee':0,
+  'gee':19,
   'wook':0,
   'jin':0
 }
@@ -127,7 +142,9 @@ export const textMap: Record<string, string[]> = {
   "rim":[],
   'lee':[],
   'hak':[],
-  'gee':[],
+  'gee':["내 인생의 가장 큰 행운은\n널 만난거야 !", "열여덟 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현이의 키워드는 ...", "운명적으로 충돌한\n유성 같은 우리!", "먼저 글자의 조형을\n다양하게 그려보면서,", "마음에 드는 조형을 선택하고,", "디테일한 부분을 그리다보면,",
+    "스케치 완성!", "벡터화 해주고,", "이어지는 흐름을 조금 더 부드럽게 수정하고,", "간격을 맞춰주고,", "조금 더 다듬은 다음,", "쌍둥이 빛을 넣어주면!",
+  ],
   'wook':[],
   'jin':[]
 }
@@ -149,7 +166,7 @@ export const imgMap: Record<string, string[]> = {
   "rim":[],
   'lee':[],
   'hak':[],
-  'gee':[],
+  'gee':[gee1, gee2, gee3, gee4, gee5, gee6, gee7, gee8, gee9, gee10, gee11, gee12, gee13, gee14, gee15],
   'wook':[],
   'jin':[]
 }

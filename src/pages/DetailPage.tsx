@@ -60,7 +60,7 @@ const DetailPage = () => {
   // 오타 수정: 마지막 fallback 값을 index(숫자)가 아닌 null로 변경
   const currentBgImg = !name ? null : index === 4 ? imgMap[name][0] : index === 5 ? imgMap[name][1] : index >= 7 ? imgMap[name][index-5] : null;
 
-  const firstTextArr = !name ? null : textMap[name][0].split('\n')
+  const firstTextArr = !name || !textMap[name][0] ? null : textMap[name][0].split('\n')
 
   return (
     // 문제 1 해결: bgColor와 bgImg prop을 분리하여 전달

@@ -83,6 +83,21 @@ import rim13 from './assets/rim13.png';
 import rim14 from './assets/rim14.png';
 import rim15 from './assets/rim15.png';
 import rim16 from './assets/rim16.png';
+import hyeon1 from './assets/hyeon1.png';
+import hyeon2 from './assets/hyeon2.png';
+import hyeon3 from './assets/hyeon3.png';
+import hyeon4 from './assets/hyeon4.png';
+import hyeon5 from './assets/hyeon5.png';
+import hyeon6 from './assets/hyeon6.png';
+import hyeon7 from './assets/hyeon7.png';
+import hyeon8 from './assets/hyeon8.png';
+import hyeon9 from './assets/hyeon9.png';
+import hyeon10 from './assets/hyeon10.png';
+import hyeon11 from './assets/hyeon11.png';
+import hyeon12 from './assets/hyeon12.png';
+import hyeon13 from './assets/hyeon13.png';
+import hyeon14 from './assets/hyeon14.png';
+import hyeon15 from './assets/hyeon15.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -120,7 +135,7 @@ export const pageNum: Record<string, number> = {
   'tae':0,
   'na':0,
   'hoon':0,
-  'hyeon':0,
+  'hyeon':19,
   'seung':0,
   "rim":20,
   'lee':0,
@@ -153,7 +168,9 @@ export const textMap: Record<string, string[]> = {
   'tae':[],
   'na':[],
   'hoon':[],
-  'hyeon':[],
+  'hyeon':["작은 우연이 큰 인연이 된다는 건\n참 행운이야 !", "열네 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현의 키워드는 ...", "현이의 매력포인트인\n입꼬리가 잘 보이는 귀여운 글자였으면!", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고,", 
+    "두 글자를 선택해\n다양하게 전개해봅니다", "", "전체 글자를 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성", "벡터화 해주고,", "획의 느낌을 넣어 두께를 맞춰주고,", "조금 더 귀엽게 배치를 바꿔주고,", "사랑스러운 하트까지\n콕! 찍어주면,", "", ""
+  ],
   'seung':[],
   "rim":["같이 있기만 해도 충전만땅이라니\n정말 큰 행운이야 !", "열다섯 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "림이의 키워드는 ...", "보자마자 우리다 !!\n라고 생각했던 사진 !", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고", "두 글자를 선택해\n다양하게 전개해봅니다",
     "그 중 마음에 드는 조형을 선택하고,", "나머지 글자도 모두 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 배치 수정하고,", "두께와 조형을 맞춰주고,", "조금 더 다듬은 다음,", "쉼표까지 콕콕!\n찍어주면,", "", ""
@@ -179,7 +196,7 @@ export const imgMap: Record<string, string[]> = {
   'tae':[],
   'na':[],
   'hoon':[],
-  'hyeon':[],
+  'hyeon':[hyeon1, hyeon2, hyeon3, hyeon4, hyeon5, hyeon6, hyeon7, hyeon8, hyeon9, hyeon10, hyeon11, hyeon12, hyeon13, hyeon14, hyeon15],
   'seung':[],
   "rim":[rim1, rim2, rim3, rim4, rim5, rim6, rim7, rim8, rim9, rim10, rim11, rim12, rim13, rim14, rim15, rim16],
   'lee':[],

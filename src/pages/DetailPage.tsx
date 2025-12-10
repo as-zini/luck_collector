@@ -21,7 +21,7 @@ const DetailPage = () => {
       const img = new Image();
       img.src = src;
     });
-  }, []);
+  }, [name]);
 
   useEffect(() => {
     // index가 18 이상이면 타이머를 시작하지 않음 (종료)
@@ -52,7 +52,7 @@ const DetailPage = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [index]);
+  }, [index, name]);
   
   // 배경색과 배경이미지를 분리해서 관리
   const currentBgColor = index <= 2 && name ? color[name] : 'black';

@@ -67,6 +67,22 @@ import gee12 from './assets/gee12.png';
 import gee13 from './assets/gee13.png';
 import gee14 from './assets/gee14.png';
 import gee15 from './assets/gee15.png';
+import rim1 from './assets/rim1.png';
+import rim2 from './assets/rim2.png';
+import rim3 from './assets/rim3.png';
+import rim4 from './assets/rim4.png';
+import rim5 from './assets/rim5.png';
+import rim6 from './assets/rim6.png';
+import rim7 from './assets/rim7.png';
+import rim8 from './assets/rim8.png';
+import rim9 from './assets/rim9.png';
+import rim10 from './assets/rim10.png';
+import rim11 from './assets/rim11.png';
+import rim12 from './assets/rim12.png';
+import rim13 from './assets/rim13.png';
+import rim14 from './assets/rim14.png';
+import rim15 from './assets/rim15.png';
+import rim16 from './assets/rim16.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -106,7 +122,7 @@ export const pageNum: Record<string, number> = {
   'hoon':0,
   'hyeon':0,
   'seung':0,
-  "rim":0,
+  "rim":20,
   'lee':0,
   'hak':0,
   'gee':19,
@@ -139,7 +155,9 @@ export const textMap: Record<string, string[]> = {
   'hoon':[],
   'hyeon':[],
   'seung':[],
-  "rim":[],
+  "rim":["같이 있기만 해도 충전만땅이라니\n정말 큰 행운이야 !", "열다섯 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "림이의 키워드는 ...", "보자마자 우리다 !!\n라고 생각했던 사진 !", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고", "두 글자를 선택해\n다양하게 전개해봅니다",
+    "그 중 마음에 드는 조형을 선택하고,", "나머지 글자도 모두 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 배치 수정하고,", "두께와 조형을 맞춰주고,", "조금 더 다듬은 다음,", "쉼표까지 콕콕!\n찍어주면,", "", ""
+  ],
   'lee':[],
   'hak':[],
   'gee':["내 인생의 가장 큰 행운은\n널 만난거야 !", "열여덟 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현이의 키워드는 ...", "운명적으로 충돌한\n유성 같은 우리!", "먼저 글자의 조형을\n다양하게 그려보면서,", "마음에 드는 조형을 선택하고,", "디테일한 부분을 그리다보면,",
@@ -163,7 +181,7 @@ export const imgMap: Record<string, string[]> = {
   'hoon':[],
   'hyeon':[],
   'seung':[],
-  "rim":[],
+  "rim":[rim1, rim2, rim3, rim4, rim5, rim6, rim7, rim8, rim9, rim10, rim11, rim12, rim13, rim14, rim15, rim16],
   'lee':[],
   'hak':[],
   'gee':[gee1, gee2, gee3, gee4, gee5, gee6, gee7, gee8, gee9, gee10, gee11, gee12, gee13, gee14, gee15],

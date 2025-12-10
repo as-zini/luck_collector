@@ -20,6 +20,7 @@ import wook from '../assets/wook_token.png';
 import jin from '../assets/jin_token.png';
 import yoon from '../assets/yoon_token.png';
 import { useNavigate } from "react-router-dom";
+import { pageNum } from "../constants";
 
 interface TokenElProps{
   img: string;
@@ -55,7 +56,7 @@ const TokenEl = ({img, isActive, setCurrentCenter, originalIndex}:TokenElProps) 
   const navigation = useNavigate();
 
   const handleClick = () => {
-    if(!isActive) return
+    if(!isActive || !pageNum[img]) return
     navigation(`/detail/${img}`, {
       state: { tokenIndex: originalIndex },
     });
@@ -73,16 +74,16 @@ const TokenEl = ({img, isActive, setCurrentCenter, originalIndex}:TokenElProps) 
 
   
   return (
-    <TokenBody src={imgMap[img]} isActive={isActive} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}></TokenBody>
+    <TokenBody src={imgMap[img]} img={img} isActive={isActive} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}></TokenBody>
   )
 }
 
 export default TokenEl
 
-const TokenBody = styled.img<{isActive:boolean}>(({isActive}) => ({
+const TokenBody = styled.img<{isActive:boolean, img:string}>(({isActive, img}) => ({
   width:"15vw",
   height:"70vh",
-  cursor:isActive ? 'pointer' : 'default',
+  cursor:isActive && pageNum[img] ? 'pointer' : 'default',
   zIndex:999,
   margin: '0 -20px',
 

@@ -141,6 +141,21 @@ import lee11 from './assets/lee11.png';
 import lee12 from './assets/lee12.png';
 import lee13 from './assets/lee13.png';
 import lee14 from './assets/lee14.png';
+import tae1 from './assets/tae1.png';
+import tae2 from './assets/tae2.png';
+import tae3 from './assets/tae3.png';
+import tae4 from './assets/tae4.png';
+import tae5 from './assets/tae5.png';
+import tae6 from './assets/tae6.png';
+import tae7 from './assets/tae7.png';
+import tae8 from './assets/tae8.png';
+import tae9 from './assets/tae9.png';
+import tae10 from './assets/tae10.png';
+import tae11 from './assets/tae11.png';
+import tae12 from './assets/tae12.png';
+import tae13 from './assets/tae13.png';
+import tae14 from './assets/tae14.png';
+import tae15 from './assets/tae15.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -175,7 +190,7 @@ export const pageNum: Record<string, number> = {
   'eun': 0,
   'ga':18,
   'yea':0,
-  'tae':0,
+  'tae':19,
   'na':0,
   'hoon':0,
   'hyeon':19,
@@ -189,7 +204,7 @@ export const pageNum: Record<string, number> = {
 }
 
 export const textMap: Record<string, string[]> = {
-  'soo': ["예상치 못한 선물은 10배는 더 기쁘다!\n정말 정말 행운이니까!", "여덟 번째 글자", " → 키를 눌러 글자를 완성해보세요!", "수의 글자는 처음부터\n빵!터지는 컨페티 같이 만들고 싶었답니다!", "두 글자를 선택해\n다양하게 그려보고,",
+  'soo': ["예상치 못한 선물은 10배는 더 기쁘다!\n정말 정말 행운이니까!", "다섯 번째 글자", " → 키를 눌러 글자를 완성해보세요!", "수의 글자는 처음부터\n빵!터지는 컨페티 같이 만들고 싶었답니다!", "두 글자를 선택해\n다양하게 그려보고,",
     "글자의 뼈대가 될 조형을\n선택해,", "전체 글자를 파생시키면\n스케치 완성!", "전체 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 두께를 맞춰주고,", "전체 배치 및 디테일 수정하고.", "깜찍한 느낌표까지\n찍어주면!",
     "", ""
   ],
@@ -199,7 +214,7 @@ export const textMap: Record<string, string[]> = {
   'sae': ["소울메이트가 있다는 건 ...\n참 ! 럭키 ! 한 일입니다!", "두 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "롬이의 키워드는 ...", "순정만화 표지 같은\n글자를 만들기로 했습니다", "마음에 드는 조형이 나올때까지\n여러번 펜으로 써 본 후에 ...",
     "전체 스케치 완성!", "벡터화 해주고,", "굵기 통일하고,", "전체 배치 수정 후에,", "귀여운 하트 느낌표까지\n넣어주면!", "", ""
   ],
-  'seon': ["언제나 돌아갈 곳이 되어준 엄마, 아빠\n감사하고 사랑합니다!", "열여섯 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "선과 호의 키워드는 ...", "어떤 글자를 만들어볼까 ...", "그게 있었지 !!\n제일 먼저 떠올랐던 엄마의 쪽지 !",
+  'seon': ["언제나 돌아갈 곳이 되어준 엄마, 아빠\n감사하고 사랑합니다!", "열한 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "선과 호의 키워드는 ...", "어떤 글자를 만들어볼까 ...", "그게 있었지 !!\n제일 먼저 떠올랐던 엄마의 쪽지 !",
     "엄마 글씨체를 닮은 손글씨가 좋겠다!\n다양하게 써보자", "이거 괜찮은데?", "작은 ‘o’의 형태나,", "흘리듯 쓴 ‘ﾩ’의 형태 같은\n엄마의 글씨체를 좀 더 강조해주면 ...",
     "전체 스케치 완성!", "벡터화 해주고,", "획 수정하고,", "전체적인 배치 수정,", "디테일 수정 후에,", "화룡점정!\n엄마의 햇님도 넣어주면!", "", ""
   ],
@@ -210,7 +225,9 @@ export const textMap: Record<string, string[]> = {
     "마음에 드는 조형을 선택한 후,", "나머지 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 간격 수정해주고,", "조형 및 디테일의 수정의", "수정의", "수정을 거치면!", "", "" 
   ],
   'yea':[],
-  'tae':[],
+  'tae':["나의 존재가 누군가의 행운이라는 것은 ...\n정말 멋진 일이죠 !!", "아홉 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "태의 키워드는 ...", "웃음과 행운으로 가득찬\n무드보드를 만든 다음,", "먼저 두 글자의 조형을\n다양하게 그려보고,", "마음에 드는 조형을 선택!", "두 글자를 바탕으로 나머지 글자를\n파생시키면,",
+    "스케치 완성!", "벡터화 해주고,", "전체 배치 바꿔주고,", "‘우리’를 강조해주고,", "조금 더 신나고 자유롭게\n배치 조절하고", "마지막! 네잎클로버까지\n넣어주면!", "", ""
+  ],
   'na':[],
   'hoon':[],
   'hyeon':["작은 우연이 큰 인연이 된다는 건\n참 행운이야 !", "열세 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현의 키워드는 ...", "현이의 매력포인트인\n입꼬리가 잘 보이는 귀여운 글자였으면!", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고,", 
@@ -242,7 +259,7 @@ export const imgMap: Record<string, string[]> = {
   'eun': [],
   'ga':[ga1, ga2, ga3, ga4, ga5, ga6, ga7, ga8, ga9, ga10, ga11, ga12, ga13, ga14,],
   'yea':[],
-  'tae':[],
+  'tae':[tae1, tae2, tae3, tae4, tae5, tae6, tae7, tae8, tae9, tae10, tae11, tae12, tae13, tae14, tae15],
   'na':[],
   'hoon':[],
   'hyeon':[hyeon1, hyeon2, hyeon3, hyeon4, hyeon5, hyeon6, hyeon7, hyeon8, hyeon9, hyeon10, hyeon11, hyeon12, hyeon13, hyeon14, hyeon15],
@@ -256,17 +273,17 @@ export const imgMap: Record<string, string[]> = {
 }
 
 export const mainText: Record<string, string> = {
-  'soo' : "다섯 번째 글자\n수",
-  'yeon': "세 번째 글자\n연",
-  'sae': "두 번째 글자\n새",
-  'seon': "열한 번째 글자\n선, 호",
   'yoon': "첫 번째 글자\n윤",
+  'sae': "두 번째 글자\n새",
+  'yeon': "세 번째 글자\n연",
   'sang': '네 번째 글자\n상',
+  'soo' : "다섯 번째 글자\n수",
   'eun': '여섯 번째 글자\n은',
   'ga':'일곱 번째 글자\n가',
   'yea':'여덟 번째 글자\n예',
   'tae':'아홉 번째 글자\n태',
   'na':'열 번째 글자\n나',
+  'seon': "열한 번째 글자\n선, 호",
   'hoon':'열두 번째 글자\n훈',
   'hyeon':'열세 번째 글자\n현',
   'seung':'열네 번째 글자\n승',

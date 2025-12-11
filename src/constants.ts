@@ -98,6 +98,20 @@ import hyeon12 from './assets/hyeon12.png';
 import hyeon13 from './assets/hyeon13.png';
 import hyeon14 from './assets/hyeon14.png';
 import hyeon15 from './assets/hyeon15.png';
+import ga1 from './assets/ga1.png';
+import ga2 from './assets/ga2.png';
+import ga3 from './assets/ga3.png';
+import ga4 from './assets/ga4.png';
+import ga5 from './assets/ga5.png';
+import ga6 from './assets/ga6.png';
+import ga7 from './assets/ga7.png';
+import ga8 from './assets/ga8.png';
+import ga9 from './assets/ga9.png';
+import ga10 from './assets/ga10.png';
+import ga11 from './assets/ga11.png';
+import ga12 from './assets/ga12.png';
+import ga13 from './assets/ga13.png';
+import ga14 from './assets/ga14.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -130,7 +144,7 @@ export const pageNum: Record<string, number> = {
   'yoon': 0,
   'sang': 0,
   'eun': 0,
-  'ga':0,
+  'ga':18,
   'yea':0,
   'tae':0,
   'na':0,
@@ -163,7 +177,9 @@ export const textMap: Record<string, string[]> = {
   'yoon': [],
   'sang': [],
   'eun': [],
-  'ga':[],
+  'ga':["닮아가고 싶은 사람이 옆에 있다는 것은\n참 행운인 것 같아요 !!", "일곱 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "가의 키워드는 ...", "‘가’의 글자를 만들기 시작할 때부터\n생각났던 화살표!", "먼저 다양한 조형의 글자를 그려보고,",
+    "마음에 드는 조형을 선택한 후,", "나머지 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 간격 수정해주고,", "조형 및 디테일의 수정의", "수정의", "수정을 거치면!", "", "" 
+  ],
   'yea':[],
   'tae':[],
   'na':[],
@@ -191,7 +207,7 @@ export const imgMap: Record<string, string[]> = {
   'yoon': [],
   'sang': [],
   'eun': [],
-  'ga':[],
+  'ga':[ga1, ga2, ga3, ga4, ga5, ga6, ga7, ga8, ga9, ga10, ga11, ga12, ga13, ga14,],
   'yea':[],
   'tae':[],
   'na':[],

@@ -127,6 +127,20 @@ import hak12 from './assets/hak12.png';
 import hak13 from './assets/hak13.png';
 import hak14 from './assets/hak14.png';
 import hak15 from './assets/hak15.png';
+import lee1 from './assets/lee1.png';
+import lee2 from './assets/lee2.png';
+import lee3 from './assets/lee3.png';
+import lee4 from './assets/lee4.png';
+import lee5 from './assets/lee5.png';
+import lee6 from './assets/lee6.png';
+import lee7 from './assets/lee7.png';
+import lee8 from './assets/lee8.png';
+import lee9 from './assets/lee9.png';
+import lee10 from './assets/lee10.png';
+import lee11 from './assets/lee11.png';
+import lee12 from './assets/lee12.png';
+import lee13 from './assets/lee13.png';
+import lee14 from './assets/lee14.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -167,7 +181,7 @@ export const pageNum: Record<string, number> = {
   'hyeon':19,
   'seung':0,
   "rim":20,
-  'lee':0,
+  'lee':18,
   'hak':19,
   'gee':19,
   'wook':0,
@@ -206,7 +220,9 @@ export const textMap: Record<string, string[]> = {
   "rim":["같이 있기만 해도 충전만땅이라니\n정말 큰 행운이야 !", "열다섯 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "림이의 키워드는 ...", "보자마자 우리다 !!\n라고 생각했던 사진 !", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고", "두 글자를 선택해\n다양하게 전개해봅니다",
     "그 중 마음에 드는 조형을 선택하고,", "나머지 글자도 모두 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 배치 수정하고,", "두께와 조형을 맞춰주고,", "조금 더 다듬은 다음,", "쉼표까지 콕콕!\n찍어주면,", "완성", ""
   ],
-  'lee':[],
+  'lee':["황금웃수저가 내 친구라니.\n이 행운을 어쩌면 좋죠?!!", "열여섯 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "이의 키워드는 ...", "이의 글자는 무조건\n멋있고 웅장해야해!", "먼저 다양한 조형의 글자들을 그려보고,", "마음에 드는 조형을 선택해서", "나머지 글자까지 그리면\n스케치 완성!",
+    "벡터화 해주고,", "배치 조금 바꿔주고,", "조형 하나 바꾸고,", "조형 둘 바꾸고,", "마지막까지 배치 신경써주면!", "", ""
+  ],
   'hak':["반전매력을 발견한다는건\n예상치 못한 행운이죠 !!", "열일곱 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "학의 키워드는 ...", "똑똑한 직선과 감성적인 곡선이\n담긴 글자를 만들어야겠다!", "먼저 글자의 기본 배치를 다양하게 생각해보고,", "다양한 조형들의 글자를 그리기!",
     "마음에 드는 조형의 글자를\n선택하고,", "나머지 글자까지 그려주면\n스케치 완성!", "벡터화 해주고,", "전체적인 간격 정리해주고,", "배치 바꿔주고,", "더 나은 조형을 찾아서 ...", "마지막까지 고민해주면!", "", ""
   ],
@@ -232,7 +248,7 @@ export const imgMap: Record<string, string[]> = {
   'hyeon':[hyeon1, hyeon2, hyeon3, hyeon4, hyeon5, hyeon6, hyeon7, hyeon8, hyeon9, hyeon10, hyeon11, hyeon12, hyeon13, hyeon14, hyeon15],
   'seung':[],
   "rim":[rim1, rim2, rim3, rim4, rim5, rim6, rim7, rim8, rim9, rim10, rim11, rim12, rim13, rim14, rim15, rim16],
-  'lee':[],
+  'lee':[lee1, lee2, lee3, lee4, lee5, lee6, lee7, lee8, lee9, lee10, lee11, lee12, lee13, lee14],
   'hak':[hak1, hak2, hak3, hak4, hak5, hak6, hak7, hak8, hak9, hak10, hak11, hak12, hak13, hak14, hak15],
   'gee':[gee1, gee2, gee3, gee4, gee5, gee6, gee7, gee8, gee9, gee10, gee11, gee12, gee13, gee14, gee15],
   'wook':[],

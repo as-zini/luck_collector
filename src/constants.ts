@@ -112,6 +112,21 @@ import ga11 from './assets/ga11.png';
 import ga12 from './assets/ga12.png';
 import ga13 from './assets/ga13.png';
 import ga14 from './assets/ga14.png';
+import hak1 from './assets/hak1.png';
+import hak2 from './assets/hak2.png';
+import hak3 from './assets/hak3.png';
+import hak4 from './assets/hak4.png';
+import hak5 from './assets/hak5.png';
+import hak6 from './assets/hak6.png';
+import hak7 from './assets/hak7.png';
+import hak8 from './assets/hak8.png';
+import hak9 from './assets/hak9.png';
+import hak10 from './assets/hak10.png';
+import hak11 from './assets/hak11.png';
+import hak12 from './assets/hak12.png';
+import hak13 from './assets/hak13.png';
+import hak14 from './assets/hak14.png';
+import hak15 from './assets/hak15.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -153,7 +168,7 @@ export const pageNum: Record<string, number> = {
   'seung':0,
   "rim":20,
   'lee':0,
-  'hak':0,
+  'hak':19,
   'gee':19,
   'wook':0,
   'jin':0
@@ -192,7 +207,9 @@ export const textMap: Record<string, string[]> = {
     "그 중 마음에 드는 조형을 선택하고,", "나머지 글자도 모두 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 배치 수정하고,", "두께와 조형을 맞춰주고,", "조금 더 다듬은 다음,", "쉼표까지 콕콕!\n찍어주면,", "완성", ""
   ],
   'lee':[],
-  'hak':[],
+  'hak':["반전매력을 발견한다는건\n예상치 못한 행운이죠 !!", "열일곱 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "학의 키워드는 ...", "똑똑한 직선과 감성적인 곡선이\n담긴 글자를 만들어야겠다!", "먼저 글자의 기본 배치를 다양하게 생각해보고,", "다양한 조형들의 글자를 그리기!",
+    "마음에 드는 조형의 글자를\n선택하고,", "나머지 글자까지 그려주면\n스케치 완성!", "벡터화 해주고,", "전체적인 간격 정리해주고,", "배치 바꿔주고,", "더 나은 조형을 찾아서 ...", "마지막까지 고민해주면!", "", ""
+  ],
   'gee':["내 인생의 가장 큰 행운은\n널 만난거야 !", "열여덟 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현이의 키워드는 ...", "운명적으로 충돌한\n유성 같은 우리!", "먼저 글자의 조형을\n다양하게 그려보면서,", "마음에 드는 조형을 선택하고,", "디테일한 부분을 그리다보면,",
     "스케치 완성!", "벡터화 해주고,", "이어지는 흐름을 조금 더 부드럽게 수정하고,", "간격을 맞춰주고,", "조금 더 다듬은 다음,", "쌍둥이 빛을 넣어주면!",
   ],
@@ -216,7 +233,7 @@ export const imgMap: Record<string, string[]> = {
   'seung':[],
   "rim":[rim1, rim2, rim3, rim4, rim5, rim6, rim7, rim8, rim9, rim10, rim11, rim12, rim13, rim14, rim15, rim16],
   'lee':[],
-  'hak':[],
+  'hak':[hak1, hak2, hak3, hak4, hak5, hak6, hak7, hak8, hak9, hak10, hak11, hak12, hak13, hak14, hak15],
   'gee':[gee1, gee2, gee3, gee4, gee5, gee6, gee7, gee8, gee9, gee10, gee11, gee12, gee13, gee14, gee15],
   'wook':[],
   'jin':[]

@@ -24,14 +24,17 @@ const DetailPage = () => {
   }, [name]);
 
   useEffect(() => {
-    // index가 18 이상이면 타이머를 시작하지 않음 (종료)
+    // index가 7 이상이면 타이머 종료
     if (index >= 7) return;
 
-    const timer = setInterval(() => {
-      setIndex(prevIndex => prevIndex + 1);
-    }, 1500);
+    // 인덱스가 4, 5, 6일 때는 2초(2000ms), 그 외에는 1.5초(1500ms)
+    const delay = (index >= 4 && index <= 6) ? 2500 : 1500;
 
-    return () => clearInterval(timer);
+    const timer = setTimeout(() => {
+      setIndex(prevIndex => prevIndex + 1);
+    }, delay);
+
+    return () => clearTimeout(timer);
   }, [index]); // 의존성 배열에 index 추가
 
   useEffect(() => {

@@ -171,6 +171,21 @@ import jin12 from './assets/jin12.png';
 import jin13 from './assets/jin13.png';
 import jin14 from './assets/jin14.png';
 import jin15 from './assets/jin15.png';
+import na1 from './assets/na1.png'
+import na2 from './assets/na2.png'
+import na3 from './assets/na3.png'
+import na4 from './assets/na4.png'
+import na5 from './assets/na5.png'
+import na6 from './assets/na6.png'
+import na7 from './assets/na7.png'
+import na8 from './assets/na8.png'
+import na9 from './assets/na9.png'
+import na10 from './assets/na10.png'
+import na11 from './assets/na11.png'
+import na12 from './assets/na12.png'
+import na13 from './assets/na13.png'
+import na14 from './assets/na14.png'
+import na15 from './assets/na15.png'
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -206,7 +221,7 @@ export const pageNum: Record<string, number> = {
   'ga':18,
   'yea':0,
   'tae':19,
-  'na':0,
+  'na':19,
   'hoon':0,
   'hyeon':19,
   'seung':0,
@@ -243,7 +258,9 @@ export const textMap: Record<string, string[]> = {
   'tae':["나의 존재가 누군가의 행운이라는 것은 ...\n정말 멋진 일이죠 !!", "아홉 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "태의 키워드는 ...", "웃음과 행운으로 가득찬\n무드보드를 만든 다음,", "먼저 두 글자의 조형을\n다양하게 그려보고,", "마음에 드는 조형을 선택!", "두 글자를 바탕으로 나머지 글자를\n파생시키면,",
     "스케치 완성!", "벡터화 해주고,", "전체 배치 바꿔주고,", "‘우리’를 강조해주고,", "조금 더 신나고 자유롭게\n배치 조절하고", "마지막! 네잎클로버까지\n넣어주면!", "", ""
   ],
-  'na':[],
+  'na':["나만의 반짝임을 가지고 있다는 것은\n마법 같은 행운이잖니!", "열 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "나의 키워드는 ...", "나에겐 ‘신데렐라 요정님’같은 존재였던\n(유)나 !", "먼저 글자의 기본 구조를\n다양하게 그려보고,", "정해진 구조에 세부 조형을 더하며",
+    "최종 스케치를 완성합니다", "벡터화 해주고,", "전체적인 굵기 조절,", "전체 배치 수정 후,", "전체 배치 수정 후,", "마지막으로 빛나는 별을\n콕콕 박아주면!", "", ""
+  ],
   'hoon':[],
   'hyeon':["작은 우연이 큰 인연이 된다는 건\n참 행운이야 !", "열세 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현의 키워드는 ...", "현이의 매력포인트인\n입꼬리가 잘 보이는 귀여운 글자였으면!", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고,", 
     "두 글자를 선택해\n다양하게 전개해봅니다", "", "전체 글자를 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성", "벡터화 해주고,", "획의 느낌을 넣어 두께를 맞춰주고,", "조금 더 귀엽게 배치를 바꿔주고,", "사랑스러운 하트까지\n콕! 찍어주면,", "", ""
@@ -277,7 +294,7 @@ export const imgMap: Record<string, string[]> = {
   'ga':[ga1, ga2, ga3, ga4, ga5, ga6, ga7, ga8, ga9, ga10, ga11, ga12, ga13, ga14,],
   'yea':[],
   'tae':[tae1, tae2, tae3, tae4, tae5, tae6, tae7, tae8, tae9, tae10, tae11, tae12, tae13, tae14, tae15],
-  'na':[],
+  'na':[na1, na2, na3, na4, na5, na6, na7, na8, na9, na10, na11, na12, na13, na14, na15],
   'hoon':[],
   'hyeon':[hyeon1, hyeon2, hyeon3, hyeon4, hyeon5, hyeon6, hyeon7, hyeon8, hyeon9, hyeon10, hyeon11, hyeon12, hyeon13, hyeon14, hyeon15],
   'seung':[],

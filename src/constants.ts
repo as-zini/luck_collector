@@ -156,6 +156,21 @@ import tae12 from './assets/tae12.png';
 import tae13 from './assets/tae13.png';
 import tae14 from './assets/tae14.png';
 import tae15 from './assets/tae15.png';
+import jin1 from './assets/jin1.png';
+import jin2 from './assets/jin2.png';
+import jin3 from './assets/jin3.png';
+import jin4 from './assets/jin4.png';
+import jin5 from './assets/jin5.png';
+import jin6 from './assets/jin6.png';
+import jin7 from './assets/jin7.png';
+import jin8 from './assets/jin8.png';
+import jin9 from './assets/jin9.png';
+import jin10 from './assets/jin10.png';
+import jin11 from './assets/jin11.png';
+import jin12 from './assets/jin12.png';
+import jin13 from './assets/jin13.png';
+import jin14 from './assets/jin14.png';
+import jin15 from './assets/jin15.png';
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -200,7 +215,7 @@ export const pageNum: Record<string, number> = {
   'hak':19,
   'gee':19,
   'wook':0,
-  'jin':0
+  'jin':19
 }
 
 export const textMap: Record<string, string[]> = {
@@ -247,7 +262,9 @@ export const textMap: Record<string, string[]> = {
     "스케치 완성!", "벡터화 해주고,", "이어지는 흐름을 조금 더 부드럽게 수정하고,", "간격을 맞춰주고,", "조금 더 다듬은 다음,", "쌍둥이 빛을 넣어주면!",
   ],
   'wook':[],
-  'jin':[]
+  'jin':["함께한 멋진 여름을 간직할 수 있다니\n이보다 더한 행운은 없어 !", "스무 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "진의 키워드는 ...", "진의 글자는 여름의 추억이 가득 느껴지는\n그런 글자였으면 했습니다", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고,",
+    "두 글자를 선택해\n다양하게 그려보고,", "글자의 뼈대가 될 조형을\n선택해,", "전체 글자를 파생시키면\n스케치 완성!", "전체 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 간격 맞춰주고,", "전체 디테일 수정하고.", "마지막 디테일까지 수정하면!", "", ""
+  ]
 }
 export const imgMap: Record<string, string[]> = {
   'soo': [soo7, soo8, soo11, soo12, soo13, soo14, soo15, soo16, soo17, soo18, soo19, soo20, soo21],
@@ -269,7 +286,7 @@ export const imgMap: Record<string, string[]> = {
   'hak':[hak1, hak2, hak3, hak4, hak5, hak6, hak7, hak8, hak9, hak10, hak11, hak12, hak13, hak14, hak15],
   'gee':[gee1, gee2, gee3, gee4, gee5, gee6, gee7, gee8, gee9, gee10, gee11, gee12, gee13, gee14, gee15],
   'wook':[],
-  'jin':[]
+  'jin':[jin1, jin2, jin3, jin4, jin5, jin6, jin7, jin8, jin9, jin10, jin11, jin12, jin13, jin14, jin15]
 }
 
 export const mainText: Record<string, string> = {

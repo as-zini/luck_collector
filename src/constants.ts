@@ -200,6 +200,18 @@ import yea11 from './assets/yea11.png'
 import yea12 from './assets/yea12.png'
 import yea13 from './assets/yea13.png'
 import yea14 from './assets/yea14.png'
+import hoon1 from './assets/hoon1.png'
+import hoon2 from './assets/hoon2.png'
+import hoon3 from './assets/hoon3.png'
+import hoon4 from './assets/hoon4.png'
+import hoon5 from './assets/hoon5.png'
+import hoon6 from './assets/hoon6.png'
+import hoon7 from './assets/hoon7.png'
+import hoon8 from './assets/hoon8.png'
+import hoon9 from './assets/hoon9.png'
+import hoon10 from './assets/hoon10.png'
+import hoon11 from './assets/hoon11.png'
+import hoon12 from './assets/hoon12.png'
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -236,7 +248,7 @@ export const pageNum: Record<string, number> = {
   'yea':18,
   'tae':19,
   'na':19,
-  'hoon':0,
+  'hoon':16,
   'hyeon':19,
   'seung':0,
   "rim":20,
@@ -277,7 +289,9 @@ export const textMap: Record<string, string[]> = {
   'na':["나만의 반짝임을 가지고 있다는 것은\n마법 같은 행운이잖니!", "열 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "나의 키워드는 ...", "나에겐 ‘신데렐라 요정님’같은 존재였던\n(유)나 !", "먼저 글자의 기본 구조를\n다양하게 그려보고,", "정해진 구조에 세부 조형을 더하며",
     "최종 스케치를 완성합니다", "벡터화 해주고,", "전체적인 굵기 조절,", "전체 배치 수정 후,", "전체 배치 수정 후,", "마지막으로 빛나는 별을\n콕콕 박아주면!", "", ""
   ],
-  'hoon':[],
+  'hoon':["크림소다 같은 친구라니 ..\n참 행운이죠?!", "열두 번째 글자",  "→ 키를 눌러 글자를 완성해보세요!", "훈의 키워드는 ...", "먼저 다양한 조형의 글자들을 그려보고,", "먼저 다양한 조형의 글자들을 그려보고,",
+    "마음에 드는 조형을 선택해서,","나머지 글자까지 그려주면\n스케치 완성!", "벡터화 해주고,","간격 조절 해주고," ,"별!까지 찍어주면,", "", ""
+  ],
   'hyeon':["작은 우연이 큰 인연이 된다는 건\n참 행운이야 !", "열세 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "현의 키워드는 ...", "현이의 매력포인트인\n입꼬리가 잘 보이는 귀여운 글자였으면!", "먼저 글자의 기본이 될 구조를\n다양하게 그려보고,", 
     "두 글자를 선택해\n다양하게 전개해봅니다", "", "전체 글자를 파생시키면\n스케치 완성!", "나머지 글자도 모두 파생시키면\n스케치 완성", "벡터화 해주고,", "획의 느낌을 넣어 두께를 맞춰주고,", "조금 더 귀엽게 배치를 바꿔주고,", "사랑스러운 하트까지\n콕! 찍어주면,", "", ""
   ],
@@ -311,7 +325,7 @@ export const imgMap: Record<string, string[]> = {
   'yea':[yea1, yea2, yea3, yea4, yea5, yea6, yea7, yea8, yea9, yea10, yea11, yea12, yea13, yea14],
   'tae':[tae1, tae2, tae3, tae4, tae5, tae6, tae7, tae8, tae9, tae10, tae11, tae12, tae13, tae14, tae15],
   'na':[na1, na2, na3, na4, na5, na6, na7, na8, na9, na10, na11, na12, na13, na14, na15],
-  'hoon':[],
+  'hoon':[hoon1, hoon2, hoon3, hoon4, hoon5, hoon6, hoon7, hoon8, hoon9, hoon10, hoon11, hoon12],
   'hyeon':[hyeon1, hyeon2, hyeon3, hyeon4, hyeon5, hyeon6, hyeon7, hyeon8, hyeon9, hyeon10, hyeon11, hyeon12, hyeon13, hyeon14, hyeon15],
   'seung':[],
   "rim":[rim1, rim2, rim3, rim4, rim5, rim6, rim7, rim8, rim9, rim10, rim11, rim12, rim13, rim14, rim15, rim16],

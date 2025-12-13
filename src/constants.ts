@@ -186,6 +186,20 @@ import na12 from './assets/na12.png'
 import na13 from './assets/na13.png'
 import na14 from './assets/na14.png'
 import na15 from './assets/na15.png'
+import yea1 from './assets/yea1.png'
+import yea2 from './assets/yea2.png'
+import yea3 from './assets/yea3.png'
+import yea4 from './assets/yea4.png'
+import yea5 from './assets/yea5.png'
+import yea6 from './assets/yea6.png'
+import yea7 from './assets/yea7.png'
+import yea8 from './assets/yea8.png'
+import yea9 from './assets/yea9.png'
+import yea10 from './assets/yea10.png'
+import yea11 from './assets/yea11.png'
+import yea12 from './assets/yea12.png'
+import yea13 from './assets/yea13.png'
+import yea14 from './assets/yea14.png'
 
 export const color: Record<string, string> = {
   'soo': "#EA504F",
@@ -196,7 +210,7 @@ export const color: Record<string, string> = {
   'sang': '#44bbce',
   'eun': '#c3cc00',
   'ga':'#004798',
-  'yea':'#004798',
+  'yea':'#ffa7ca',
   'tae':'#9dff9b',
   'na':'#ffe383',
   'hoon':'#00a7ff',
@@ -219,7 +233,7 @@ export const pageNum: Record<string, number> = {
   'sang': 0,
   'eun': 0,
   'ga':18,
-  'yea':0,
+  'yea':18,
   'tae':19,
   'na':19,
   'hoon':0,
@@ -254,7 +268,9 @@ export const textMap: Record<string, string[]> = {
   'ga':["닮아가고 싶은 사람이 옆에 있다는 것은\n참 행운인 것 같아요 !!", "일곱 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "가의 키워드는 ...", "‘가’의 글자를 만들기 시작할 때부터\n생각났던 화살표!", "먼저 다양한 조형의 글자를 그려보고,",
     "마음에 드는 조형을 선택한 후,", "나머지 글자를 파생시키면\n스케치 완성!", "벡터화 해주고,", "전체적인 간격 수정해주고,", "조형 및 디테일의 수정의", "수정의", "수정을 거치면!", "", "" 
   ],
-  'yea':[],
+  'yea':["좋아할 수 밖에 없는 사람이 옆에 있다는 건\n참 행운입니다!", "여덟 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "예의 키워드는 ...", "먼저 다양한 조형의 글자들을 그려보고,", "마음에 드는 조형을 선택해서,",
+    "나머지 글자까지 그려주면\n스케치 완성!", "나머지 글자까지 그려주면\n스케치 완성!", "벡터화 해주고,", "더 예쁜 조형으로 바꿔주고,", "크기 균형 맞추고,", "조형 조금 더 손보고,", "마지막까지 디테일까지 신경써주면!", 
+  ],
   'tae':["나의 존재가 누군가의 행운이라는 것은 ...\n정말 멋진 일이죠 !!", "아홉 번째 글자", "→ 키를 눌러 글자를 완성해보세요!", "태의 키워드는 ...", "웃음과 행운으로 가득찬\n무드보드를 만든 다음,", "먼저 두 글자의 조형을\n다양하게 그려보고,", "마음에 드는 조형을 선택!", "두 글자를 바탕으로 나머지 글자를\n파생시키면,",
     "스케치 완성!", "벡터화 해주고,", "전체 배치 바꿔주고,", "‘우리’를 강조해주고,", "조금 더 신나고 자유롭게\n배치 조절하고", "마지막! 네잎클로버까지\n넣어주면!", "", ""
   ],
@@ -292,7 +308,7 @@ export const imgMap: Record<string, string[]> = {
   'sang': [],
   'eun': [],
   'ga':[ga1, ga2, ga3, ga4, ga5, ga6, ga7, ga8, ga9, ga10, ga11, ga12, ga13, ga14,],
-  'yea':[],
+  'yea':[yea1, yea2, yea3, yea4, yea5, yea6, yea7, yea8, yea9, yea10, yea11, yea12, yea13, yea14],
   'tae':[tae1, tae2, tae3, tae4, tae5, tae6, tae7, tae8, tae9, tae10, tae11, tae12, tae13, tae14, tae15],
   'na':[na1, na2, na3, na4, na5, na6, na7, na8, na9, na10, na11, na12, na13, na14, na15],
   'hoon':[],

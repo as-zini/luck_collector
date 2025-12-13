@@ -56,19 +56,17 @@ const TokenEl = ({img, isActive, setCurrentCenter, originalIndex}:TokenElProps) 
   const navigation = useNavigate();
 
   const handleClick = () => {
-    if(!isActive || !pageNum[img]) return
+    if(!pageNum[img]) return
     navigation(`/detail/${img}`, {
       state: { tokenIndex: originalIndex },
     });
   }
 
   const handleMouseEnter = () => {
-    if(!isActive) return
     setCurrentCenter(img)
   }
 
   const handleMouseLeave = () => {
-    if(!isActive) return
     setCurrentCenter("")
   }
 
@@ -80,15 +78,15 @@ const TokenEl = ({img, isActive, setCurrentCenter, originalIndex}:TokenElProps) 
 
 export default TokenEl
 
-const TokenBody = styled.img<{isActive:boolean, img:string}>(({isActive, img}) => ({
+const TokenBody = styled.img<{isActive:boolean, img:string}>(({img}) => ({
   width:"15vw",
   height:"70vh",
-  cursor:isActive && pageNum[img] ? 'pointer' : 'default',
+  cursor:pageNum[img] ? 'pointer' : 'default',
   zIndex:999,
   margin: '0 -20px',
 
   "&:hover":{
-    transform:`translateY(${isActive ? "-50px" : "0"})`,
+    transform:`translateY(-50px)`,
   }
   
 }))
